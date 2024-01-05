@@ -49,6 +49,14 @@ para mostrar como esta o nosso projeto
 git add .
 para ele adicionar na área temporária essa mudança
 
+git commit -m "Acrescentado valor das vendas"
+vai registrar o nosso commit, que foi a nossa alteração
 
+git push
+agora como já não é mais a primeira vez, é só fazer o simples comando git push, que ele já envia tudo
+
+
+
+fim.
 
 
