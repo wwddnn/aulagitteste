@@ -55,8 +55,45 @@ vai registrar o nosso commit, que foi a nossa alteração
 git push
 agora como já não é mais a primeira vez, é só fazer o simples comando git push, que ele já envia tudo
 
+******************************************************************************************
+
+# COMANDOS PARA VER E REGISTRAR SUA IDENTIFICAÇÃO: para ver o name e email:
+
+git config -- global user.name "Warley Dias"
+vai configurar meu nome
+
+git config --global user.mail "seu email"
+vai configurar seu email
+
+git config --list
+aparece as configurações todas 
+
+**********************************************************************************
+# COMO ENXERGAR ARQUIVOS OCULTOS:
+
+ir em menu inciar no windows, depois em desmarcar a opção 'ocultar as extensões dos tipos de arquivos conhecidos'.
+e depois marcar a opção 'mostrar arquivos, pastas e unidades ocultas'
+
+**********************************************************************************
+# CONFIGURAR CHAVE SSH PARA O GITHUB:
+vai cadastrar qual computador pode ser usado no seu nome.
+
+passo a passo:
+tem que gerar uma chave SSH no github.
+obs buscar no google como gerar chave ssh no github.
+
+usar o seguinte comando no gitbash:
+ssh-keygen -t rsa -b 4096 -c "seu email"
+
+pronto, agora ja foi gerada a chave ssh no computador, então eu pego essa chave que gerou que fica dentro do arquivo no seu computador...
+e então copio a chave e colo la no site github em settings.
+
+**********************************************************************************
+# SALVAR A PRIMEIRA VERSÃO DE UM PROJETO NO GITHUB:
 
 
-fim.
+
+
+
 
 
