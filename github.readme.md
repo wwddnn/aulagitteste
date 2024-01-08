@@ -27,12 +27,12 @@ github usa o nome main para salvar o historico de commits. antigamente usava o c
 ideal é que seja o comando main. então para garantir que seja usado o comando main, fazemos esse codigo git branch -M main
 
 obs agora o ideal é ir no site do GITHUB e criar um novo projeto vazio por lá. 
-**obs escolher o SSH (por isso que o link começará com git@github.com:wwddnn ... )
+### **obs escolher o SSH (por isso que o link começará com git@github.com:wwddnn ... )
 o próximo passo então é voltar para o GIT BASH e então vamos usar o comando abaixo, para ele associar esse projeto do meu computador com o repositório que acabei de criar la no github site.
 
 ### obs dica: para limpar o terminal do GIT BASH usar o comando clear
 
-git remote add origin git@github.com:wwddnn/aulagithub-cursodevsuperior.git
+git remote add origin git@github.comseuusuario/seuprojeto.git
 esse comando inteiro acima, que é um comando grande, você pode pegar direto na página do GITHUB site do repositório que acabei de criar
 agora sim, nesse momento o meu repositório local esta associado com o meu repositório no site do GITHUB
 
@@ -40,8 +40,9 @@ git push -u origin main
 pronto, agora é só enviar para o repositório do GITHUB!!!!
 
 
-# COMANDOS DO GIT PARA SALVAR UMA NOVA VERSÃO: é você fazer uma modificação no projeto e então salvar uma nova versão.
-vamos dizer que eu alterei algo simples no meu projeto, nesse exemplo alterei algo no arquivo vendas.html
+# COMANDOS DO GIT PARA SALVAR UMA NOVA VERSÃO: 
+## é você fazer uma modificação no projeto e então salvar uma nova versão.
+## vamos dizer que eu alterei algo simples no meu projeto, nesse exemplo alterei algo no arquivo vendas.html
 
 git status
 para mostrar como esta o nosso projeto
@@ -57,9 +58,10 @@ agora como já não é mais a primeira vez, é só fazer o simples comando git p
 
 ******************************************************************************************
 
-# COMANDOS PARA VER E REGISTRAR SUA IDENTIFICAÇÃO: para ver o name e email:
+# COMANDOS PARA VER E REGISTRAR SUA IDENTIFICAÇÃO: 
+## para ver o name e email:
 
-git config -- global user.name "Warley Dias"
+git config -- global user.name "seu name"
 vai configurar meu nome
 
 git config --global user.mail "seu email"
@@ -76,7 +78,7 @@ e depois marcar a opção 'mostrar arquivos, pastas e unidades ocultas'
 
 **********************************************************************************
 # CONFIGURAR CHAVE SSH PARA O GITHUB:
-vai cadastrar qual computador pode ser usado no seu nome.
+## vai cadastrar qual computador pode ser usado no seu nome.
 
 passo a passo:
 tem que gerar uma chave SSH no github.
@@ -89,7 +91,7 @@ pronto, agora ja foi gerada a chave ssh no computador, então eu pego essa chave
 e então copio a chave e colo la no site github em settings.
 
 **********************************************************************************
-# SALVAR A PRIMEIRA VERSÃO DE UM PROJETO NO GITHUB:
+
 
 
 
