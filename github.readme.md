@@ -108,14 +108,18 @@ vou adicionar os arquivos na minha area stage.
 
 passo3:
 git commit -m "mensagem explicativa"
+esse comando é pra salvar as alterações no meu computador.
 
 passo4:
 git push
+é pra mandar para o repositório remoto.
+obs se for a primeira vez que vc atua nesse projeto, entao tem que fazer o comando 'git push -u origin main' ao inves desse comando acima que é somente o git push.
 
 obs git log
 esse comando mostra o historico de versoes do projeto.
 da pra fazer varios git add . e ele vai juntando todas essas adições na area de stage, mas ainda nao fez commmit nem nada.
-
+obs quando chamar  o git lob, e aparecer do lado do commit o texto 'origin/main, origin/HEAD' significa que ate aqui esta salvo la no github, 
+mas dai pra cima é pq ainda nao esta salvo la no github.
 
 
 
