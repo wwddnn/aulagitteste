@@ -147,6 +147,7 @@ obs se quiser usar esse comando, ele tira do stage as alterações que fiz agora
 ### se quiser adicionar somente alguns arquivos, e não todos. nesse caso somente o arquivo 'sobre.html' que eu quis adicionar. depois na sequência só fazer um git commit -m "mensagem".
 
 git status
+obs onde aparece no gitbash assim... 'HEAD > main' é porque eu fiz o add . e fiz o commit, porem ainda não fiz o push então ele ainda não foi para o repositório remoto do github.
 
 ***************************************************************************************
 
