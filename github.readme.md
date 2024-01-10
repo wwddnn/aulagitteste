@@ -121,6 +121,38 @@ da pra fazer varios git add . e ele vai juntando todas essas adições na area d
 obs quando chamar  o git lob, e aparecer do lado do commit o texto 'origin/main, origin/HEAD' significa que ate aqui esta salvo la no github, 
 mas dai pra cima é pq ainda nao esta salvo la no github.
 
+***********************************************************************************************************************************
+# GIT LOG PARA VERIFICAR O HISTORICO DE VERSÕES:
+
+git log
+mostra o histórico de versões
+
+git log --oneline
+ele mostra de forma resumida o histórico de versões do projeto.
+
+***************************************************************************
+# ENTENDENDO  GIT STATUS, GIT ADD E STAGE:
+
+git status
+informa o status do projeto naquele momento.
+obs nesse comando, pode aparecer 3 situações: 
+* modified
+* untracked : é quando tem arquivo novo que eu criei mas ainda não salvei na area de stage. exemplo quando crio uma pagina html nova no meu projeto. aparece no gitbash como 'untracked files'.
+* deleted : é quando você deleta algum arquivo, ele diz então que isso ocorreu.
+
+git reset
+obs se quiser usar esse comando, ele tira do stage as alterações que fiz agora há pouco como comando git add .
+
+### GIT ADD . SOBRE.HTML
+### se quiser adicionar somente alguns arquivos, e não todos. nesse caso somente o arquivo 'sobre.html' que eu quis adicionar. depois na sequência só fazer um git commit -m "mensagem".
+
+git status
+
+***************************************************************************************
+
+
+
+
 
 
 
