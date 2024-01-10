@@ -91,6 +91,34 @@ pronto, agora ja foi gerada a chave ssh no computador, então eu pego essa chave
 e então copio a chave e colo la no site github em settings.
 
 **********************************************************************************
+# CLONAR O PROJETO E O HISTORICO QUE ESTA NO GITHUB PARA O MEU COMPUTADOR:
+
+passo1: 
+git clone git@github.com...
+vou copiar atraves do clone o projeto que esta la no github, para o meu computador.
+obs. vai clicar no botao que tem o endereco do projeto, pq ele vai trazer para o clone o historico de versoes.
+obs copiar o link no formato SSH
+atencao nao vai clicar em fazer download nao, pq aqui ele nao traz o historico de versoes.
+### obs se precisar trocar de pasta dentro do git bash, basta usar o comando 'cd' e depois o nome da pasta que voce quer ir.
+### obs se quiser abrir o vscode dentro do git bash é só usar o comando 'code . '
+
+passo2:
+git add .
+vou adicionar os arquivos na minha area stage.
+
+passo3:
+git commit -m "mensagem explicativa"
+
+passo4:
+git push
+
+obs git log
+esse comando mostra o historico de versoes do projeto.
+da pra fazer varios git add . e ele vai juntando todas essas adições na area de stage, mas ainda nao fez commmit nem nada.
+
+
+
+
 
 
 
