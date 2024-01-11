@@ -150,6 +150,65 @@ git status
 obs onde aparece no gitbash assim... 'HEAD > main' é porque eu fiz o add . e fiz o commit, porem ainda não fiz o push então ele ainda não foi para o repositório remoto do github.
 
 ***************************************************************************************
+## GIT DIFF: DIFF QUER DIZER DIFERENÇA
+
+dica usar o vscode que ele mostra as diferenças
+
+git diff vendas.html
+esse 'vendas.html' é o nome do arquivo que você quer ver a diferença, o que aconteceu com esse arquivo.
+
+obs da pra consultar esse diff pelo vscode, fica ate melhor pra ver, basta ir no simbolo de compartilhar que fica do lado esquerdo da tela e depois em 'changes'.
+entao da pra ver o que eu fiz desde o último commit até o momento de agora. fica em verde o que fiz de novo.
+
+**************************************************************************************************
+## GIT CHECKOUT
+
+vamos usar bastante! os meus arquivos são modificados temporariamente para voltar do jeito que estava antes, mas tem que colocar o código para onde você quer modificar.
+
+git checkout f225...
+faz o comando e coloca o código que deseja que ele volte para aquele commit anterior.
+isso é bom se você apagou arquivos ou tinha modificado errado depois. daí ele pode voltar para a posição que desejar.
+OBS atenção!!! QUANDO DER O GIT CHECKOUT NÃO É PARA MEXER AGORA NOS ARQUIVOS, NÃO ALTERAR ELES AQUI. não alterar o commit que esta abaixo do head. não é uma boa prática isso. esse git checkout é só para ver mesmo o código no commit anterior. mas caso fez alguma mudança, então usar os comandos abaixo para desfazer as mudanças:
+git reset
+git clean -df
+git checkout -- .
+esse é um checkout para limpar modificações que fez de forma equivocada.
+
+git checkout main
+obs quando a gente volta, mas depois quer retornar para o mais recente commit feito.
+
+git checkout HEAD~1
+estou voltando para o penúltimo commit.
+esse '~1' que na verdade é um '~N' ele indica que pode voltar n commits.
+
+
+### CODIGO DO COMMIT, HEAD
+
+cada commit la no github tem um código. se dermos o comando no gitbash, o comando git log, da pra ver esse codigo de cada commit.
+o ultimo commit feito, ele vem com o 'HEAD -> main' significa que é o último commit feito ou seja esta nas cabeças.
+
+***********************************************************************************************************************
+## ARQUIVO .GITIGNORE
+
+é um arquivo que indica o que não deve ser salvo pelo git. exemplo arquivos de log, arquivos compilados, arquivos de bibliotecas externas usadas no projeto, arquivos de configuração da IDE, arquivos de configuração do sistema.
+
+no caso então o que eu não quero salvar no git, eu tenho que colocar o .gitignore
+
+esse arquivo fica salvo na pasta principal do repositório. 
+
+mas dá para salvar outros arquivos .gitignore em outras subpastas.
+
+**************************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
 
 
 
