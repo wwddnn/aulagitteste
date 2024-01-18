@@ -198,7 +198,65 @@ esse arquivo fica salvo na pasta principal do repositório.
 
 mas dá para salvar outros arquivos .gitignore em outras subpastas.
 
-**************************************************************************************************************************
+*****************************************************************************************************************
+## REMOVENDO ARQUIVOS DA AREA DE STAGE
+
+git status
+é sempre bom dar esse comando antes pra ver como esta 
+
+git reset
+
+****************************************************************************************************************
+## COMO DESFAZER MODIFICACOES NAO SALVAS
+# VC APAGA AS MODIFICACOES DESDE O ULTIMO COMMIT
+
+git status
+
+git reset
+nesse caso para tirar do stage as ultimas alteracoes
+
+git clean -df
+
+git checkout -- .
+agora sim depois desses comandos ele voltou para o que estava antes, posso ir la no programa que vai estar do jeito que estava antes, ele reparou.
+****************************************************************************************************************
+## O QUE FAZER QUANDO ABRE O EDITOR VIM
+# é o editor básico do linux, ele funciona sem ter uma interface gráfica. 
+# ele também esta presente no gitbash.
+
+
+i
+habilita para escrever dentro do vim
+posso escrever o que quiser agora, pois é a msg que vem no -m "..." do commit que eu não completei antes, por isso abre esse editor vim do linux.
+
+ESC
+wq
+ENTER
+primeiro aperta o esc, e depois digita o wq. isso é pra salvar o commit
+
+ESC
+q!
+ENTER
+aqui ele não salva as alterações do commit que deixei incompleto, ele sai da tela mesmo do vim.
+
+*****************************************************************************************************************
+## DELETANDO O ÚLTIMO COMMIT SEM DELETAR MODIFICAÇÕES NO ARQUIVO
+# DESFAZER O ÚLTIMO COMMIT
+# nesse caso eu quero desfazer o último commit que acabei de fazer, porque eu esqueci de fazer alguma coisinha nos arquivos. então vou desfazer esse commit, mas sem mexer nas modificações que fiz no arquivo. dai agora sim, vou fazer um novo commit com as alterações que desejo.
+
+git status
+
+git reset --soft HEAD~1
+vou dar o reset pra voltar para o útimo commit, mas vou dar o soft para não apagar as modificações.
+ou seja vou voltar um commit mas sem apagar as modificações (soft)
+
+***************************************************************************************************************
+## 
+
+
+
+
+
 
 
 
