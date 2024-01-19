@@ -251,7 +251,69 @@ vou dar o reset pra voltar para o útimo commit, mas vou dar o soft para não ap
 ou seja vou voltar um commit mas sem apagar as modificações (soft)
 
 ***************************************************************************************************************
-## 
+## DELETAR COMMITS E AS MODIFICAÇÕES NOS ARQUIVOS
+
+git status
+
+git reset --hard <codigo do commit>
+
+obs AÇÃO DESTRUTIVA!!! 
+
+exemplo
+git status
+git reset --hard HEAD~1
+vai destruir o ultimo commit e vai voltar para o penultimo commit
+
+obs interessante é que nos comandos acima, ele mexe no stage e no commit, mas não mexe com o que já esta salvo
+la no github.
+
+### SE QUISER TRAZER TUDO QUE ESTA NO GITHUB PARA O SEU COMPUTADOR NOVAMENTE
+
+git pull origin main
+esse comando busca os arquivos que já estão salvos no github.
+*********************************************************************************************
+## COMO ATUALIZAR O REPOSITÓRIO LOCAL EM RELAÇÃO AO REPOSITÓRIO REMOTO
+
+git status
+
+git pull <nome remoto> <nome da branch>
+
+exemplo
+git pull origin main
+com esse comando ele vai trazer o que esta no remoto para o local
+obs quando tem um histórico um pouco maior no github do que o local, então só fazer esse comando
+
+***********************************************************************************************
+## COMO RESOLVER UM PUSH REJEITADO
+### É UM PROBLEMA COMUM
+### NÃO É PERMITIDO ENVIAR UM PUSH SE O SEU REPOSITÓRIO LOCAL ESTA ATRASADO EM RELAÇÃO AO REMOTO
+### O QUE FAZER? TENHO QUE ATUALIZAR O REPOSITÓRIO LOCAL 
+
+git status
+
+git log --online
+vai mostrar todos os commits do projeto
+
+git pull <nome do remoto> <nome do branch>
+vai buscar no repositório e trazer para o local
+
+exemplo
+git pull origin main
+pode ser que abra o vim, o editor do linux. porque eu tentei fazer um commit, só que tem arquivos a mais lá no remoto
+ESC
+:wq
+comando acima vai sair do modo edição do vim, e vai salvar o merge que é uma juntada
+
+git log --online
+aparece a ordem que foi feitos os commits e como agora eu estou repeitando a ordem...
+
+git push 
+agora ele vai fazer o push para o remoto
+
+obs nesse exemplo acima, o merge é o 'mesclar' os 2 commits, ou seja juntou o commit remoto com o commit local
+*************************************************************************************************************
+## RESOLVENDO CONFLITO
+##  
 
 
 
