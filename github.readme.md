@@ -299,10 +299,11 @@ vai buscar no repositório e trazer para o local
 
 exemplo
 git pull origin main
+vai trazer o histórico do github para o local
 pode ser que abra o vim, o editor do linux. porque eu tentei fazer um commit, só que tem arquivos a mais lá no remoto
 ESC
 :wq
-comando acima vai sair do modo edição do vim, e vai salvar o merge que é uma juntada
+comando acima vai sair do modo edição do vim, e vai salvar o ''MERGE'' que é quando junta os dois históricos
 
 git log --online
 aparece a ordem que foi feitos os commits e como agora eu estou repeitando a ordem...
@@ -311,9 +312,22 @@ git push
 agora ele vai fazer o push para o remoto
 
 obs nesse exemplo acima, o merge é o 'mesclar' os 2 commits, ou seja juntou o commit remoto com o commit local
+obs nesse exemplo acima foi mais facil porque cada histórico mexeu em arquivos diferentes, por exemplo um mexeu no readme e o outro mexeu no vendas por exemplo
 *************************************************************************************************************
-## RESOLVENDO CONFLITO
-##  
+## RESOLVENDO PULL COM CONFLITO
+## QUANDO QUE OCORRE UM CONFLITO ? É QUANDO VOCÊ VAI MESCLAR DOIS HISTÓRICOS DIFERENTES, MAS NO MESMO ARQUIVO. QUAL O HISTÓRICO QUE VALE ENTÃO?
+## AQUI O QUE MUDA EM RELAÇÃO AO EXEMPLO ANTERIOR, É QUE AGORA AS MEXIDAS SÃO DENTRO DO MESMO ARQUIVO
+
+no exemplo, vamos no arquivo vendas dentro do github e vamos editar o valor para 6mil.
+agora vamos abrir nosso projeto que ja estava no vscode, e vamos no arquivo vendas e vamos colocar 7mil.
+vamos fazer um git pull então só que dá CONFLICT (CONTENT) MERGE CONFLICT IN VENDAS
+significa que deu conflito, pq tanto no github quanto no local ambos mexeram no mesmo arquivo vendas.
+obs se reparar na proxima linha do git bash aparece no final da linha um (MAIN | MERGING)
+eu to no meio do processo de merging
+git status
+ele vai mostrar que teve mudança no mesmo arquivo, então agora você pode ir no código e fazer o ajuste, pois o gitbash acabou de te avisar que o mesmo arquivo teve dois históricos diferentes
+
+
 
 
 
