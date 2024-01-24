@@ -1,6 +1,6 @@
 
 ## COMANDOS DO GIT PARA SALVAR A PRIMEIRA VERSÃO:
-## comandos do git: obs. os comandos abaixo sao usados dentro do GIT BASH.
+### comandos do git: obs. os comandos abaixo sao usados dentro do GIT BASH.
 
 ls
 vai listar os arquivos da pasta que você esta.
@@ -27,10 +27,14 @@ github usa o nome main para salvar o historico de commits. antigamente usava o c
 ideal é que seja o comando main. então para garantir que seja usado o comando main, fazemos esse codigo git branch -M main
 
 obs agora o ideal é ir no site do GITHUB e criar um novo projeto vazio por lá. 
-## **obs escolher o SSH (por isso que o link começará com git@github.com:wwddnn ... )
+
+
+### **obs escolher o SSH (por isso que o link começará com git@github.com:wwddnn ... )
 o próximo passo então é voltar para o GIT BASH e então vamos usar o comando abaixo, para ele associar esse projeto do meu computador com o repositório que acabei de criar la no github site.
 
-## obs dica: para limpar o terminal do GIT BASH usar o comando clear
+
+### obs dica: para limpar o terminal do GIT BASH usar o comando clear
+
 
 git remote add origin git@github.comseuusuario/seuprojeto.git
 esse comando inteiro acima, que é um comando grande, você pode pegar direto na página do GITHUB site do repositório que acabei de criar
@@ -40,9 +44,9 @@ git push -u origin main
 pronto, agora é só enviar para o repositório do GITHUB!!!!
 
 
-## COMANDOS DO GIT PARA SALVAR UMA NOVA VERSÃO: 
-## é você fazer uma modificação no projeto e então salvar uma nova versão.
-## vamos dizer que eu alterei algo simples no meu projeto, nesse exemplo alterei algo no arquivo vendas.html
+### COMANDOS DO GIT PARA SALVAR UMA NOVA VERSÃO: 
+### é você fazer uma modificação no projeto e então salvar uma nova versão.
+### vamos dizer que eu alterei algo simples no meu projeto, nesse exemplo alterei algo no arquivo vendas.html
 
 git status
 para mostrar como esta o nosso projeto
@@ -56,10 +60,9 @@ vai registrar o nosso commit, que foi a nossa alteração
 git push
 agora como já não é mais a primeira vez, é só fazer o simples comando git push, que ele já envia tudo
 
-*****************************************************************
 
-## COMANDOS PARA VER E REGISTRAR SUA IDENTIFICAÇÃO: 
-## para ver o name e email:
+### COMANDOS PARA VER E REGISTRAR SUA IDENTIFICAÇÃO: 
+### para ver o name e email:
 
 git config -- global user.name "seu name"
 vai configurar meu nome
@@ -70,15 +73,16 @@ vai configurar seu email
 git config --list
 aparece as configurações todas 
 
-**********************************************
-## COMO ENXERGAR ARQUIVOS OCULTOS:
+
+
+### COMO ENXERGAR ARQUIVOS OCULTOS:
 
 ir em menu inciar no windows, depois em desmarcar a opção 'ocultar as extensões dos tipos de arquivos conhecidos'.
 e depois marcar a opção 'mostrar arquivos, pastas e unidades ocultas'
 
-*************************************************
-## CONFIGURAR CHAVE SSH PARA O GITHUB:
-## vai cadastrar qual computador pode ser usado no seu nome.
+
+### CONFIGURAR CHAVE SSH PARA O GITHUB:
+### vai cadastrar qual computador pode ser usado no seu nome.
 
 passo a passo:
 tem que gerar uma chave SSH no github.
@@ -90,8 +94,8 @@ ssh-keygen -t rsa -b 4096 -c "seu email"
 pronto, agora ja foi gerada a chave ssh no computador, então eu pego essa chave que gerou que fica dentro do arquivo no seu computador...
 e então copio a chave e colo la no site github em settings.
 
-**************************************************************************************************
-## CLONAR O PROJETO E O HISTORICO QUE ESTA NO GITHUB PARA O MEU COMPUTADOR:
+
+### CLONAR O PROJETO E O HISTORICO QUE ESTA NO GITHUB PARA O MEU COMPUTADOR:
 
 passo1: 
 git clone git@github.com...
@@ -99,8 +103,8 @@ vou copiar atraves do clone o projeto que esta la no github, para o meu computad
 obs. vai clicar no botao que tem o endereco do projeto, pq ele vai trazer para o clone o historico de versoes.
 obs copiar o link no formato SSH
 atencao nao vai clicar em fazer download nao, pq aqui ele nao traz o historico de versoes.
-## obs se precisar trocar de pasta dentro do git bash, basta usar o comando 'cd' e depois o nome da pasta que voce quer ir.
-## obs se quiser abrir o vscode dentro do git bash é só usar o comando 'code . '
+### obs se precisar trocar de pasta dentro do git bash, basta usar o comando 'cd' e depois o nome da pasta que voce quer ir.
+### obs se quiser abrir o vscode dentro do git bash é só usar o comando 'code . '
 
 passo2:
 git add .
@@ -121,8 +125,8 @@ da pra fazer varios git add . e ele vai juntando todas essas adições na area d
 obs quando chamar  o git lob, e aparecer do lado do commit o texto 'origin/main, origin/HEAD' significa que ate aqui esta salvo la no github, 
 mas dai pra cima é pq ainda nao esta salvo la no github.
 
-***********************************************************
-## GIT LOG PARA VERIFICAR O HISTORICO DE VERSÕES:
+
+### GIT LOG PARA VERIFICAR O HISTORICO DE VERSÕES:
 
 git log
 mostra o histórico de versões
@@ -130,10 +134,10 @@ mostra o histórico de versões
 git log --oneline
 ele mostra de forma resumida o histórico de versões do projeto.
 
-*****************************************************
-## ENTENDENDO  GIT STATUS, GIT ADD E STAGE:
 
-## GIT STATUS
+### ENTENDENDO  GIT STATUS, GIT ADD E STAGE:
+
+### GIT STATUS
 informa o status do projeto naquele momento.
 obs nesse comando, pode aparecer 3 situações: 
 * modified
@@ -143,14 +147,14 @@ obs nesse comando, pode aparecer 3 situações:
 git reset
 obs se quiser usar esse comando, ele tira do stage as alterações que fiz agora há pouco como comando git add .
 
-## GIT ADD . SOBRE.HTML
-## se quiser adicionar somente alguns arquivos, e não todos. nesse caso somente o arquivo 'sobre.html' que eu quis adicionar. depois na sequência só fazer um git commit -m "mensagem".
+### GIT ADD . SOBRE.HTML
+### se quiser adicionar somente alguns arquivos, e não todos. nesse caso somente o arquivo 'sobre.html' que eu quis adicionar. depois na sequência só fazer um git commit -m "mensagem".
 
-## GIT STAGE
+### GIT STAGE
 obs onde aparece no gitbash assim... 'HEAD > main' é porque eu fiz o add . e fiz o commit, porem ainda não fiz o push então ele ainda não foi para o repositório remoto do github.
 
-*********************************************
-## GIT DIFF: DIFF QUER DIZER DIFERENÇA
+
+### GIT DIFF: DIFF QUER DIZER DIFERENÇA
 
 dica usar o vscode que ele mostra as diferenças
 
@@ -160,9 +164,9 @@ esse 'vendas.html' é o nome do arquivo que você quer ver a diferença, o que a
 obs da pra consultar esse diff pelo vscode, fica ate melhor pra ver, basta ir no simbolo de compartilhar que fica do lado esquerdo da tela e depois em 'changes'.
 entao da pra ver o que eu fiz desde o último commit até o momento de agora. fica em verde o que fiz de novo.
 
-********************
-## GIT CHECKOUT
-## vamos usar bastante! os meus arquivos são modificados temporariamente para voltar do jeito que estava antes, mas tem que colocar o código para onde você quer modificar.
+
+### GIT CHECKOUT
+### vamos usar bastante! os meus arquivos são modificados temporariamente para voltar do jeito que estava antes, mas tem que colocar o código para onde você quer modificar.
 
 git checkout f225...
 faz o comando e coloca o código que deseja que ele volte para aquele commit anterior.
@@ -182,15 +186,15 @@ estou voltando para o penúltimo commit.
 esse '~1' que na verdade é um '~N' ele indica que pode voltar n commits.
 
 
-## CODIGO DO COMMIT, HEAD
+### CODIGO DO COMMIT, HEAD
 
 cada commit la no github tem um código. se dermos o comando no gitbash, o comando git log, da pra ver esse codigo de cada commit.
 o ultimo commit feito, ele vem com o 'HEAD -> MAIN' significa que é o último commit feito ou seja esta nas cabeças.
 
 OBS o comando git log --oneline ele lista todos os históricos na ordem, porém em 1 linha cada.
 
-***************************
-## ARQUIVO .GITIGNORE
+
+### ARQUIVO .GITIGNORE
 
 é um arquivo que indica o que não deve ser salvo pelo git. exemplo arquivos de log, arquivos compilados, arquivos de bibliotecas externas usadas no projeto, arquivos de configuração da IDE, arquivos de configuração do sistema.
 
@@ -200,6 +204,7 @@ esse arquivo fica salvo na pasta principal do repositório.
 
 mas dá para salvar outros arquivos .gitignore em outras subpastas.
 
+
 ****************************************************
 ## REMOVENDO ARQUIVOS DA AREA DE STAGE
 
@@ -208,9 +213,9 @@ git status
 
 git reset
 
-******************************************************
-## COMO DESFAZER MODIFICACOES NAO SALVAS
-## VOCÊ APAGA AS MODIFICACOES DESDE O ULTIMO COMMIT
+
+### COMO DESFAZER MODIFICACOES NAO SALVAS
+### VOCÊ APAGA AS MODIFICACOES DESDE O ULTIMO COMMIT
 
 git status
 
@@ -221,10 +226,11 @@ git clean -df
 
 git checkout -- .
 agora sim depois desses comandos ele voltou para o que estava antes, posso ir la no programa que vai estar do jeito que estava antes, ele reparou.
-***************************************************
-## O QUE FAZER QUANDO ABRE O EDITOR VIM
-## é o editor básico do linux, ele funciona sem ter uma interface gráfica. 
-## ele também esta presente no gitbash.
+
+
+### O QUE FAZER QUANDO ABRE O EDITOR VIM
+### é o editor básico do linux, ele funciona sem ter uma interface gráfica. 
+### ele também esta presente no gitbash.
 
 
 i
@@ -241,10 +247,10 @@ q!
 ENTER
 aqui ele não salva as alterações do commit que deixei incompleto, ele sai da tela mesmo do vim.
 
-**************************************************************************************
-## DELETANDO O ÚLTIMO COMMIT SEM DELETAR MODIFICAÇÕES NO ARQUIVO
-## DESFAZER O ÚLTIMO COMMIT
-## nesse caso eu quero desfazer o último commit que acabei de fazer, porque eu esqueci de fazer alguma coisinha nos arquivos. então vou desfazer esse commit, mas sem mexer nas modificações que fiz no arquivo. dai agora sim, vou fazer um novo commit com as alterações que desejo.
+
+### DELETANDO O ÚLTIMO COMMIT SEM DELETAR MODIFICAÇÕES NO ARQUIVO
+### DESFAZER O ÚLTIMO COMMIT
+### nesse caso eu quero desfazer o último commit que acabei de fazer, porque eu esqueci de fazer alguma coisinha nos arquivos. então vou desfazer esse commit, mas sem mexer nas modificações que fiz no arquivo. dai agora sim, vou fazer um novo commit com as alterações que desejo.
 
 git status
 
@@ -252,12 +258,12 @@ git reset --soft HEAD~1
 vou dar o reset pra voltar para o útimo commit, mas vou dar o soft para não apagar as modificações.
 ou seja vou voltar um commit mas sem apagar as modificações (SOFT)
 
-## OBS A DIFERENÇA DESSE COMANDO ACIMA, PARA O COMANDO QUE VEREMOS A SEGUIR É QUE UM TEM A PALAVRA ' SOFT ' E O OUTRO TEM A PALAVRA ' HARD '
+
+### OBS A DIFERENÇA DESSE COMANDO ACIMA, PARA O COMANDO QUE VEREMOS A SEGUIR É QUE UM TEM A PALAVRA ' SOFT ' E O OUTRO TEM A PALAVRA ' HARD '
 
 
-*****************************************************************
-## DELETAR COMMITS E AS MODIFICAÇÕES NOS ARQUIVOS
-## É DELETAR UM COMMMIT E AS ALTERAÇÕES POSTERIORES A ESSE COMMIT
+### DELETAR COMMITS E AS MODIFICAÇÕES NOS ARQUIVOS
+### É DELETAR UM COMMMIT E AS ALTERAÇÕES POSTERIORES A ESSE COMMIT
 
 git status
 
@@ -280,14 +286,14 @@ la no github.
 obs se você se arrependeu de apagar algum commit local, e quer trazer de volta o que já está no github, então usa o comando
 git pull origin main
 
-****************************************************************************************************
-## SE QUISER TRAZER TUDO QUE ESTA NO GITHUB PARA O SEU COMPUTADOR NOVAMENTE
+
+### SE QUISER TRAZER TUDO QUE ESTA NO GITHUB PARA O SEU COMPUTADOR NOVAMENTE
 
 git pull origin main
 esse comando busca os arquivos que já estão salvos no github
 
-********************************************************************************************
-## COMO ATUALIZAR O REPOSITÓRIO LOCAL EM RELAÇÃO AO REPOSITÓRIO REMOTO
+
+### COMO ATUALIZAR O REPOSITÓRIO LOCAL EM RELAÇÃO AO REPOSITÓRIO REMOTO
 
 git status
 
@@ -298,11 +304,11 @@ git pull origin main
 com esse comando ele vai trazer o que esta no remoto para o local
 obs quando tem um histórico um pouco maior no github do que o local, então só fazer esse comando
 
-*********************************************
-## COMO RESOLVER UM PUSH REJEITADO
-## É UM PROBLEMA COMUM
-## NÃO É PERMITIDO ENVIAR UM PUSH SE O SEU REPOSITÓRIO LOCAL ESTA ATRASADO EM RELAÇÃO AO REMOTO
-## O QUE FAZER? TENHO QUE ATUALIZAR O REPOSITÓRIO LOCAL 
+
+### COMO RESOLVER UM PUSH REJEITADO
+### É UM PROBLEMA COMUM
+### NÃO É PERMITIDO ENVIAR UM PUSH SE O SEU REPOSITÓRIO LOCAL ESTA ATRASADO EM RELAÇÃO AO REMOTO
+### O QUE FAZER? TENHO QUE ATUALIZAR O REPOSITÓRIO LOCAL 
 
 git status
 
@@ -328,10 +334,11 @@ agora ele vai fazer o push para o remoto
 
 obs nesse exemplo acima, o merge é o 'mesclar' os 2 commits, ou seja juntou o commit remoto com o commit local
 obs nesse exemplo acima foi mais facil porque cada histórico mexeu em arquivos diferentes, por exemplo um mexeu no readme e o outro mexeu no vendas por exemplo
-*****************************************
-## RESOLVENDO PULL COM CONFLITO
-## QUANDO QUE OCORRE UM CONFLITO ? É QUANDO VOCÊ VAI MESCLAR DOIS HISTÓRICOS DIFERENTES, MAS NO MESMO ARQUIVO. QUAL O HISTÓRICO QUE VALE ENTÃO?
-## AQUI O QUE MUDA EM RELAÇÃO AO EXEMPLO ANTERIOR, É QUE AGORA AS MEXIDAS SÃO DENTRO DO MESMO ARQUIVO
+
+
+### RESOLVENDO PULL COM CONFLITO
+### QUANDO QUE OCORRE UM CONFLITO ? É QUANDO VOCÊ VAI MESCLAR DOIS HISTÓRICOS DIFERENTES, MAS NO MESMO ARQUIVO. QUAL O HISTÓRICO QUE VALE ENTÃO?
+### AQUI O QUE MUDA EM RELAÇÃO AO EXEMPLO ANTERIOR, É QUE AGORA AS MEXIDAS SÃO DENTRO DO MESMO ARQUIVO
 
 no exemplo, vamos no arquivo vendas dentro do github e vamos editar o valor para 6mil.
 agora vamos abrir nosso projeto que ja estava no vscode, e vamos no arquivo vendas e vamos colocar 7mil.
@@ -349,9 +356,10 @@ git push
 agora o push vai dar certo! e o MAIN MERGING que fica no final da linha vai sair e vai ficar somente MAIN
 git log --oneline
 ele traz em 1 linha todos os históricos de modificação do projeto
-**********************************************************
-## COMO SOBRESCREVER UM HISTÓRICO NO GITHUB
-## SE EU QUISER IGNORAR O HISTÓRICO RECENTE QUE ESTA NO GITHUB, VAMOS DIZER QUE VOLTEI A TRABALHAR NO MEU PROJETO LOCAL HOJE, E IGNOREI A ALTERAÇÃO QUE ALGUEM FEZ NO PROJETO ONTEM, SÓ VOU CONSIDERAR O HISTÓRICO NOVO QUE TRABALHEI HOJE NA MINHA MÁQUINA
+
+
+### COMO SOBRESCREVER UM HISTÓRICO NO GITHUB
+### SE EU QUISER IGNORAR O HISTÓRICO RECENTE QUE ESTA NO GITHUB, VAMOS DIZER QUE VOLTEI A TRABALHAR NO MEU PROJETO LOCAL HOJE, E IGNOREI A ALTERAÇÃO QUE ALGUEM FEZ NO PROJETO ONTEM, SÓ VOU CONSIDERAR O HISTÓRICO NOVO QUE TRABALHEI HOJE NA MINHA MÁQUINA
 
 git push -f <nbome do remote> <nome do branch>
 esse f é pra forçar meu histórico local para ir na marra por cima mesmo la para o github
@@ -365,9 +373,10 @@ git push -f
 agora sim ele vai forçar e vai jogar para o github o projeto do jeito que esta no meu local, vai passar por cima de tudo que esta la no github
 
 obs tem que tomar cuidado com esse ' -f ' que usamos, porque ele força mesmo, nesse caso ele vai destruir tudo que tem depois desse commit la no github, ou seja ele deleta todo o histórico a mais que tem lá no github! ATENÇÃO !!
-***************************************************************************
-## COMO APONTAR O PROJETO PARA OUTRO REPOSITÓRIO REMOTO
-## ESSA DÚVIDA EU TIVE DESDE QUE COMECEI A USAR O GIT E GITHUB
+
+
+### COMO APONTAR O PROJETO PARA OUTRO REPOSITÓRIO REMOTO
+### ESSA DÚVIDA EU TIVE DESDE QUE COMECEI A USAR O GIT E GITHUB
 
 git remote set-url origin git@git hub.com: .... 
 esse codigo todo acima, copiamos ele do site github quando acabamos de criar um repositório lá
@@ -379,7 +388,108 @@ via mostrar que o projeto aponta para outro repositório que é o que acabei de 
 git push -u origin main
 pra jogar o projeto lá para o github dentro do repositório novo
 
-***************************************************************************************
+*******************************************
+## BRANCHES E TRABALHO EM EQUIPE
+
+para trabalhar com mais de um branch. 
+dividir o histórico do mesmo projeto em mais de uma linha de histórico.
+
+
+### ADICIONAR COLABORADORES AO REPOSITÓRIO REMOTO
+
+Não posso fazer um push no projeto dos outros.
+
+Projetos públicos no Github podem ser lidos, baixados, clonados, forkados por qualquer pessoa.
+
+Por padrão outros usuários não tem permissão de escrita no seu repositório remoto.
+
+Para adicionar colaboradores ao projeto, ir no site do GitHub, e depois em 'Configurações' e depois em 'Colaboradores'.
+obs Sempre pede novamente a sua senha
+Depois de adicionado um colaborador, a partir de agora, esse colaborador pode fazer push no projeto.
+
+
+### INTRODUÇÃO AOS BRANCHES
+
+Aprender a trabalhar com os branches.
+O branch principal do projeto é a branch main.
+
+Um branch novo, seria criar uma nova linha no tempo, a partir de um dado ponto na linha existente, onde pode salvar um outro histórico que vai seguir a linha dele.
+Ou seja, a partir de certo ponto eu posso abrir uma nova branch.
+A partir de uma nova feature esse projeto vai ter uma nova branch, esse pode ser um exemplo. Nova feature é uma nova característica, nova funcionalidade.
+
+É possivel por exemplo a partir do mesmo ponto da branch main, abrir outras branches com features novas.
+Nesse caso então, teríamos a branch main que é a principal, e depois outras duas branches que seriam a branch ft-login e a branch ft-pedido.
+
+git checkout ft-login
+com esse comando o git muda o histórico e os arquivos e vai para a branch ft-login.
+
+git checkout main
+e nesse comando o git muda o histórico e os arquivos e vai para a branch main
+
+Obs Dessa forma é fácil mudar entre as visões do projeto. Consigo mudar da branch main, para a branch ft-login ou então para a branch ft-pedido.
+
+
+### MANIPULANDO BRANCHES LOCALMENTE
+
+git branches
+esse comando vai listar as branches que existem
+
+git branch nome-do-branch
+esse comando vai criar uma nova branch
+
+git branch -d nome-do-branch
+esse comando vai deletar a branch (Ação Destrutiva!!)
+
+git branch -D nome-do-branch
+esse comando vai deletar a branch mesmo sem ter feito merge dele ainda (Ação Destrutiva!)
+obs esse comando tem o 'D' em maiúsculo, diferente do comando anterior.
+
+** exemplo:
+Supor que estou desenvolvendo agora uma nova feature sobre login no projeto que já existe.
+Então não posso desenvolver essa nova feature direto na branch main! Atenção! 
+Tenho que abrir uma nova branch. 
+git branch ft-login
+com o comando eu criei uma nova branch
+git branch
+com o comando eu peço para listar as branchs
+git checkout ft-login
+esse comando troca para a branch ft-login, e sai da branch main
+obs. observar que no final da linha do gitbash ja aparece a branch(ft-login).
+obs. então tudo que eu fizer nesse projeto a partir de agora, eu vou começar a salvar dentro dessa branch ft-login, e não mais na branch main.
+obs. então a branch main continua com os commits que ela já tinha, e a partir de agora o que eu salvar como commit vai para a branch ft-login.
+obs. conforme vou fazendo git add . e git commit na branch ft-login, essas mudanças ficam salvas somente nessa branch, ainda não foram para a branch main.
+
+obs. as branchs são totalmente isoladas uma da outra.
+
+obs se eu tentar deletar a branch ft-login nesse momento, com o comando git branch -d ft-login, ele mostra que a branch não fez merge ainda, ele não esta mesclado ainda. Isso ocorre porque eu ainda não salvei isso no main, não mesclei.
+Então tenho que usar o comando git branch -D ft-login
+esse comando vai deletar direto a branch ft-login, ele nem me pergunta, simplesmente apaga, mesmo ainda não ter sido feito o merge.
+se eu usar o git branch agora para listar as branchs, ele mostra somente a branch main, pois eu apaguei a branch ft-login.
+obs caso eu já tenha feito o commit novo dentro da nova branch ft-login que criei, então tenho que apagar os commits novos com o comando git reset --soft HEAD~1
+agora é apagado o útimo commit, mas mantém os arquivos na area de stage. 
+então  consigo trocar de branch, com o comando git checkout main, para trocar para a branch main.
+e por fim consigo apagar a branch ft-login com o comando git branch -D ft-login.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
