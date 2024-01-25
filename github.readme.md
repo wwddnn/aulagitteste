@@ -471,6 +471,44 @@ então  consigo trocar de branch, com o comando git checkout main, para trocar p
 e por fim consigo apagar a branch ft-login com o comando git branch -D ft-login.
 
 
+## MERGE FAST FORWARD
+
+A operação Merge serve para mesclar o histórico de um branch de origem para um branch de destino.
+
+Para mesclar usamos o comando 'merge'. Nesse exemplo vamos juntar a branch ft-login que foi criada a parte, com a branch principal main.
+
+Merge fast forward é o merge que não temos problemas de conflito. Quer dizer 'avançar'.
+É assim, tem um branch main, e no final dele você cria uma branch ft-login, e depois essa branch é mesclada com a branch main que é a principal.
+
+O comando 'git pull' pode ser entendido como uma 'merge' entre o repositório remoto para o repositório local. Você traz o que esta no remoto para o seu projeto local. é praticamente uma mescla. é uma mesclagem das branchs, da branch remoto com a branch local.
+
+O comando 'merge' deve ser feito a partir da branch de DESTINO.
+
+** OBS O procedimento correto é fazer um merge do branch main para o branch de feature, e não o contrário.
+
+Obs Quando abandonar uma branch pra trabalhar em outra branch, é sempre bom ver no gitbash se esta tudo salvo, as alterações.
+
+Exemplo:
+git branch ft-login
+crio a branch ft-login que é a branch de feature
+git checkout ft-login
+mudo para essa branch
+obs posso usar o comando opcional aqui de já criar a branch nova e já mudar para ela, uso então 'git branch -b ft-login' , aqui usamos o '-b' para ele mudar direto para a branch nova que foi criada agora. faz tudo em um único comando.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
