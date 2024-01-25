@@ -499,6 +499,11 @@ git add .
 git commit -m "Criado formulario"
 git log --oneline
 esse comando exibe em 1 linha as alterações no projeto e suas branchs
+git branch main
+esse comando faz eu voltar para a branch main, que nesse caso será a branch de destino do meu merge
+git merge ft-login (faço esse comando dentro da branch main ok! atenção!)
+esse comando vai juntar a branch ft-login com a branch main que é a principal.
+
 
 
 
