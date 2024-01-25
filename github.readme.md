@@ -489,6 +489,23 @@ O comando 'merge' deve ser feito a partir da branch de DESTINO.
 
 Obs Quando abandonar uma branch pra trabalhar em outra branch, é sempre bom ver no gitbash se esta tudo salvo, as alterações.
 
+Exemplo:
+git branch ft-login
+crio a branch ft-login que é a branch de feature
+git checkout ft-login
+mudo para essa branch
+obs posso usar o comando opcional aqui de já criar a branch nova e já mudar para ela, uso então 'git checkout -b ft-login' , aqui usamos o '-b' para  mudar direto para a branch nova que foi criada agora. faz tudo em um único comando.
+git status
+git add .
+git commit -m "Criado formulario"
+git log --oneline
+esse comando exibe em 1 linha as alterações no projeto e suas branchs
+git branch main
+esse comando faz eu voltar para a branch main, que nesse caso será a branch de destino do meu merge
+git merge ft-login (faço esse comando dentro da branch main ok! atenção!)
+esse comando vai juntar a branch ft-login com a branch main que é a principal.
+obs. toda vez que precisar trocar de branch, digitar o comando 'git branch ft-login' para trocar para a branch de nova feature, ou então 'git branch main' para retornar para a branch main.
+
 
 
 
