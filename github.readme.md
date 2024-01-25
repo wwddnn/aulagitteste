@@ -494,6 +494,11 @@ crio a branch ft-login que é a branch de feature
 git checkout ft-login
 mudo para essa branch
 obs posso usar o comando opcional aqui de já criar a branch nova e já mudar para ela, uso então 'git checkout -b ft-login' , aqui usamos o '-b' para  mudar direto para a branch nova que foi criada agora. faz tudo em um único comando.
+git status
+git add .
+git commit -m "Criado formulario"
+git log --oneline
+esse comando exibe em 1 linha as alterações no projeto e suas branchs
 
 
 
