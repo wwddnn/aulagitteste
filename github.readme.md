@@ -506,6 +506,14 @@ git merge ft-login (faço esse comando dentro da branch main ok! atenção!)
 esse comando vai juntar a branch ft-login com a branch main que é a principal.
 obs. toda vez que precisar trocar de branch, digitar o comando 'git branch ft-login' para trocar para a branch de nova feature, ou então 'git branch main' para retornar para a branch main.
 
+Uma vez que a branch de feature esteja mesclado com o merge, cria-se um ''pull request'' no repositório remoto. 
+Enviei minha feature para o repositório remoto onde todo mundo vê, e a sua equipe vai revisar e dar o ok e homologar e dão o aceite do pull request, que passa o merge do feature para o main.
+
+
+## PROCEDIMENTO PULL REQUEST
+
+
+
 
 
 
