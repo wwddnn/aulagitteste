@@ -503,6 +503,7 @@ git branch main
 esse comando faz eu voltar para a branch main, que nesse caso será a branch de destino do meu merge
 git merge ft-login (faço esse comando dentro da branch main ok! atenção!)
 esse comando vai juntar a branch ft-login com a branch main que é a principal.
+obs. toda vez que precisar trocar de branch, digitar o comando 'git branch ft-login' para trocar para a branch de nova feature, ou então 'git branch main' para retornar para a branch main.
 
 
 
