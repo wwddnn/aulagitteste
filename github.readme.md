@@ -484,7 +484,8 @@ O comando 'git pull' pode ser entendido como uma 'merge' entre o repositório re
 
 O comando 'merge' deve ser feito a partir da branch de DESTINO.
 
-** OBS O procedimento correto é fazer um merge do branch main para o branch de feature, e não o contrário.
+** OBS O procedimento correto é fazer um merge do branch main para o branch de feature, e não o contrário. 
+** Nesse exemplo eu faço o comando git merge dentro do main ok  !!
 
 Obs Quando abandonar uma branch pra trabalhar em outra branch, é sempre bom ver no gitbash se esta tudo salvo, as alterações.
 
@@ -494,6 +495,8 @@ crio a branch ft-login que é a branch de feature
 git checkout ft-login
 mudo para essa branch
 obs posso usar o comando opcional aqui de já criar a branch nova e já mudar para ela, uso então 'git branch -b ft-login' , aqui usamos o '-b' para ele mudar direto para a branch nova que foi criada agora. faz tudo em um único comando.
+git branch main
+esse comando vai mudar para a branch main
 
 
 
