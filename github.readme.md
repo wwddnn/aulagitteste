@@ -538,11 +538,12 @@ git checkout ft-login
 
 passo 3
 depois faz o merge da branch main para a branch feature. para atualizar meu branch de feature em relação ao meu branch de main:
-gti merge main
+gti merge main (na branch ft-login)
 
 passo 4
-faça o push para salvar a feature lá no github:
+faça o push para salvar a branch de feature lá no repositorio remoto:
 git push -u origin ft-login
+
 
 
 
