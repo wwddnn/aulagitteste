@@ -524,15 +524,22 @@ um merge e pull request para ir para a branch main, e daí vai pra implantação
 Obs 'produção' é quando esta rodando na nuvem. quando o cliente já pode usar.
 
 passo 1
-faz um merge do main para o branch feature. pra ver se alguem não mexeu no remoto, enquanto eu elaborei a feature novo. faz esse merge, pra puxar do remoto para o local, e ver se não tem conflito. depois disso aí sim, faz a pull request.
-então usamos primeiro o comando abaixo para atualizar o local com o que esta no remoto:
+faz um merge do main para o branch feature. 
+pra ver se alguem não mexeu no remoto, enquanto eu elaborei a feature novo. 
+faz esse merge, pra puxar do remoto para o local, e ver se não tem conflito. 
+depois disso aí sim, faz a pull request.
+então usamos primeiro o comando abaixo para atualizar o local com o que esta no remoto. 
+eu tenho que fazer esse git pull pra trazer do remoto para o local primeiro:
 git pull origin main (no repositorio main)
+
 passo 2
 depois faz o comando abaixo para trocar de branch e ir pra branch de feature:
 git checkout ft-login
+
 passo 3
 depois faz o merge da branch main para a branch feature. para atualizar meu branch de feature em relação ao meu branch de main:
 gti merge main
+
 passo 4
 faça o push para salvar a feature lá no github:
 git push -u origin ft-login
