@@ -512,6 +512,33 @@ Enviei minha feature para o repositório remoto onde todo mundo vê, e a sua equ
 
 ## PROCEDIMENTO PULL REQUEST
 
+Não se faz atualização na branch main enquanto a feature não tiver homologada. 
+Isso porque o branch main esta configurado com um processo automatizado de CI / CD
+Ou seja atualizações na branch main disparam automaticamente uma nova build da aplicação, ou 
+até mesmo a implantação da aplicação em ambiente de produção.
+
+Ou seja, primeiro a gente joga a atualização para a branch de feature, e depois é que ela vai para a branch main.
+Mas para ir pra branch main, a equipe tem que avaliar essa feature e se concordar ai sim é feito 
+um merge e pull request para ir para a branch main, e daí vai pra implantação e produção.
+
+Obs 'produção' é quando esta rodando na nuvem. quando o cliente já pode usar.
+
+passo 1
+faz um merge do main para o branch feature. pra ver se alguem não mexeu no remoto, enquanto eu elaborei a feature novo. faz esse merge, pra puxar do remoto para o local, e ver se não tem conflito. depois disso aí sim, faz a pull request.
+então usamos primeiro o comando abaixo para atualizar o local com o que esta no remoto:
+git pull origin main (no repositorio main)
+passo 2
+depois faz o comando abaixo para trocar de branch e ir pra branch de feature:
+git checkout ft-login
+passo 3
+depois faz o merge da branch main para a branch feature. para atualizar meu branch de feature em relação ao meu branch de main:
+gti merge main
+passo 4
+faça o push para salvar a feature lá no github:
+git push -u origin ft-login
+
+
+
 
 
 
